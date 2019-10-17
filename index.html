@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Farsan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>teachersyll</title>
+</head>
+<body>
+    <!-- <a href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a> -->
+    <!-- Menu bar -->
+    <div id="myTopnav" class="topnav" > 
+        <a href="index.html" class="active">Home</a>
+        <!-- <a href="#" onclick="openside()">Lesson</a> -->
+        <a href="#about-heading">About</a>
+        <a href="#myCertificates">Certificates</a>
+        <a href="#contact-page">Contact</a>
+        <a href="javascript:void;" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!------------- Main page  -------->
+    <div id="container">
+        <div id="about"></div>
+
+        <div id="intro">
+            <h1 id="name">Hi. My name is Syllinda!
+            </h1>
+            <p id="profession">I'm a Vancouver-based<br> English teacher. </p>
+        </div>
+    </div>
+
+    <!-------------- about me ------------>
+    <div id="about-me">
+        <h1 id="about-heading">About Me</h1>
+        <p id="aboutMe">
+            My name is Syllinda, but everybody calls me Syll. <br>
+            I have 18 years experience teaching English as a second language.<br>
+            I teach kids, teenagers and adults. <br>
+            I have 5 years experience teaching online.<br> 
+            I have the CELTA Certificate and a post graduation 
+            in English Language and Literature. <br>
+            I am from Brazil originally, but I lived in London, in the UK for 8 years <br> 
+            and I am currently 
+            living in Vancouver, Canada. 
+        </p>
+    </div>
+
+    <!-- my Certificates page -->
+    <div id="myCertificates-page">
+        <h1 id="certificates-heading">My Certificates</h1>
+    </div>
+    <div id="myCertificates" >
+        <a href="images/CELTA.jpg">
+        <img class="cert" id="celta_cert" src="images/CELTA.jpg" alt="Celta Certificate">
+        </a>
+        <!-- <img class="picbig" id="celta_cert" src="images/CELTA.jpg" alt="Celta Certificate"> -->
+        <a href="images/Proficiency.jpg">
+        <img class="cert" id="proficiency_cert" src="images/Proficiency.jpg" alt="Proficiency Certificate">
+        </a>
+        <!-- <img class="picbig" id="proficiency_cert" src="images/Proficiency.jpg" alt="Proficiency Certificate"> -->
+    </div>
+
+    <!-- contact page -->
+    <div id="contact-page"></div>
+    <div id="contact-wrapper"> 
+        <form name="myform" method="post" action="https://formspree.io/syllinda@gmail.com" autocomplete="on">
+            <h1 id="contact-heading">Contact</h1>
+            <input type="text" name="name" id="name" 
+                placeholder="Full Name" required> <br>
+            <input type="email" name="email" id="email" size="40"
+                placeholder="Your e-mail address" required> <br>
+            <textarea id="message" name="message" rows="10" cols="40" maxlength="400"
+                placeholder="Enter your message"></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+
+    <script>
+        // menu bar responsive 
+        function myFunction() {
+            let x = document.getElementById("myTopnav"); 
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav"; 
+            }
+        }
+
+        // open side bar 
+        function openside() {
+            document.getElementById("mySidenav").style.width = "250px"; 
+            document.body.style.marginLeft = "250px";
+        }
+
+        // close side bar 
+        function closeside() {
+            document.getElementById("mySidenav").style.width = "0"; 
+            document.body.style.marginLeft = "0";
+        }
+    </script>
+    <footer>
+        <div class="footer-contact">
+            <p id="phone">cell phone (778) 751-4211</p>
+            <p id="copyright">&copy 2019 created by Syllinda Cardoso</p>
+        </div>
+    </footer>
+</body>
+</html>
