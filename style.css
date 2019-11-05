@@ -150,6 +150,9 @@ html, body {
 
 
 /* ------------- contact -------------- */
+form {
+    width: 80%; 
+}
 input {
     margin: 15px; 
     height: 50px;
@@ -178,9 +181,14 @@ input[type=submit] {
     width: 70%; 
 }
 
-@media screen and (max-width:600px) {
-    #contact-wrapper {position: relative;}
+#send{
+    text-align: center; 
+    align-content: center; 
 }
+
+/* @media screen and (max-width:600px) {
+    #contact-wrapper {position: relative;}
+} */
 
 /* ------------- footer --------------- */
 footer {
